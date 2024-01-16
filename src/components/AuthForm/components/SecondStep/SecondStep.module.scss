@@ -1,0 +1,44 @@
+.FormWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 400px;
+  padding-top: 24px;
+  margin-bottom: 48px;
+}
+
+.Title {
+  margin-bottom: 8px;
+}
+
+.Fields {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.Field {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  img {
+    display: block;
+    width: 36px;
+    height: 35px;
+    padding: 8px;
+    cursor: pointer;
+  }
+}
+
+.AddButton {
+  width: 44px;
+  height: 44px;
+  margin-top: 8px;
+}
+
+.Block {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}

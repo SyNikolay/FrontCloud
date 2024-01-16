@@ -1,0 +1,33 @@
+.Layout {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px;
+  background-color: #fff;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  min-height: 704px;
+}
+
+.Header {
+  position: fixed;
+  top: 0;
+  width: 1000px;
+  color: var(--white);
+  background-color: var(--blue);
+}
+
+.Content {
+  flex: 1 1 auto;
+}
+
+.Footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  width: 1000px;
+  height: 40px;
+}

@@ -1,0 +1,16 @@
+.Avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--light-blue);
+}
+
+.Initials {
+  color: var(--blue-grey);
+  font-family: 'SB Sans Text Mono', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+}
