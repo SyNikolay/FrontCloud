@@ -170,7 +170,8 @@ html::-webkit-scrollbar {
   height: 0;
 }
 
-body, #root {
+body,
+#root {
   min-height: 100vh;
   background-color: var(--main-bg);
   color: var(--pale-dark);

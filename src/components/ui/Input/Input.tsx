@@ -25,16 +25,18 @@ export const Input: FC<IProps> = ({
 }) => {
   return (
     <div className={className}>
-      {label && <div
-        style={{
-          color: 'var( --pale-dark)',
-          fontSize: '14px',
-          lineHeight: '20px',
-          marginBottom: '8px',
-        }}
-      >
-        {label}
-      </div>}
+      {label && (
+        <div
+          style={{
+            color: 'var( --pale-dark)',
+            fontSize: '14px',
+            lineHeight: '20px',
+            marginBottom: '8px',
+          }}
+        >
+          {label}
+        </div>
+      )}
       <WrapperTextField
         error={error}
         name={name}

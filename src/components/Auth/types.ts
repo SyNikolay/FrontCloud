@@ -12,4 +12,4 @@ export type User = {
 
 type Link = 'Telegram' | 'GitHub' | 'Resume';
 
-type Links = Partial<Record<Link, string>>
+type Links = Partial<Record<Link, string>>;

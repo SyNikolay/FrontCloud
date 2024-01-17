@@ -50,4 +50,3 @@ export const CheckBox: FC<Props> = ({ label, labelClassName, ...props }) => {
     <CheckBoxItem {...props} />
   );
 };
-
