@@ -2,10 +2,8 @@ import * as Yup from 'yup';
 import { AuthFormType, Shape } from '../types';
 
 export const authPageValidationSchema = Yup.object<Shape<AuthFormType>>({
-  nickname: Yup.string()
-    .required('Обязательное поле')
-    .max(30, 'Максимальная длинна 30 символов'),
-    // .matches(/([a-zA-Z0-9])/, 'Допустимы буквы и цифры'),
+  nickname: Yup.string().required('Обязательное поле').max(30, 'Максимальная длинна 30 символов'),
+  // .matches(/([a-zA-Z0-9])/, 'Допустимы буквы и цифры'),
   // password: Yup.string().required(),
   name: Yup.string().required(),
   // sername: Yup.string().required(),

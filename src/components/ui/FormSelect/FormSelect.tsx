@@ -17,7 +17,7 @@ export const FormSelect = () => {
 
   return (
     <FormControl sx={{ width: '100%' }}>
-      <Select displayEmpty value={personName} onChange={handleChange} >
+      <Select displayEmpty value={personName} onChange={handleChange}>
         <MenuItem disabled value="">
           <em>Пол</em>
         </MenuItem>

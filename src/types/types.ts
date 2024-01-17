@@ -1,4 +1,4 @@
-import { AnySchema } from "yup";
+import { AnySchema } from 'yup';
 
 export type Shape<Fields extends Record<string, any>> = {
   [Key in keyof Fields]: AnySchema;
