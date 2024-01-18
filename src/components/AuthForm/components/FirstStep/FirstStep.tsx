@@ -12,7 +12,7 @@ export const FirstStep = () => {
       <FormInput control={control} label="Nickname" name="nickname" placeholder="Nickname" />
       <FormInput control={control} label="Name" name="name" placeholder="Name" />
       <FormInput control={control} label="Sername" name="sername" placeholder="Sername" />
-      <FormSelect />
+      <FormSelect control={control} label="Sex" name="sex" />
     </div>
   );
 };

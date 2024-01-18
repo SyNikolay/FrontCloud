@@ -10,6 +10,11 @@ export type User = {
   links: Links;
 };
 
+export type AuthType = {
+  email: string;
+  phone: string;
+};
+
 type Link = 'Telegram' | 'GitHub' | 'Resume';
 
 type Links = Partial<Record<Link, string>>;
