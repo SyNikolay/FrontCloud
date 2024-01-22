@@ -20,6 +20,7 @@ export const SecondStep = () => {
   });
 
   const checkboxGroup = watch('checkbox');
+  const radioGroup = watch('radio');
 
   const checkoboxChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.checked) {
@@ -27,7 +28,7 @@ export const SecondStep = () => {
     } else {
       setValue(
         'checkbox',
-        checkboxGroup.filter((el: number) => el === +e.target.value)
+        checkboxGroup.filter((el: number) => el !== +e.target.value)
       );
     }
   };
@@ -67,6 +68,7 @@ export const SecondStep = () => {
             key={val}
             label={`${val}`}
             value={val}
+            checked={checkboxGroup.includes(val)}
             onChange={checkoboxChangeHandler}
             sx={{
               '&.MuiCheckbox-root': {
@@ -88,6 +90,7 @@ export const SecondStep = () => {
                 value={val}
                 control={
                   <Radio
+                    checked={+radioGroup === val}
                     sx={{
                       '& .MuiSvgIcon-root': {
                         fontSize: 22,

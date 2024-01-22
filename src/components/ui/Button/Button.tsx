@@ -11,9 +11,16 @@ interface ButtonType extends ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string;
 }
 
-export const Button = ({ children, className, variant = 'primary', disabled, ...props }: ButtonType) => {
+export const Button = ({
+  children,
+  className,
+  variant = 'primary',
+  disabled,
+  type = 'button',
+  ...props
+}: ButtonType) => {
   return (
-    <button className={classNames(styles.Button, className, styles[variant] ?? 'primary')} {...props}>
+    <button className={classNames(styles.Button, className, styles[variant] ?? 'primary')} type={type} {...props}>
       {children}
     </button>
   );

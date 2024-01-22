@@ -5,14 +5,14 @@ export type Shape<Fields extends Record<string, any>> = {
 };
 
 export type AuthFormType = {
-  nickname: string | null;
-  name: string | null;
-  sername: string | null;
-  phone: string | null;
-  email: string | null;
-  sex: string | null;
+  nickname: string;
+  name: string;
+  sername: string;
+  phone: string;
+  email: string;
+  sex: 'man' | 'woman' | '';
   advantages: string[];
-  radio: string | null;
+  radio: number | null;
   checkbox: number[];
-  about: string | null;
+  about: string;
 };

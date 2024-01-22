@@ -45,7 +45,6 @@ export const FormInput: FC<IProps> = ({
           <WrapperTextField
             value={value}
             onChange={(event) => {
-              console.log(event.target.value);
               onChange(event.target.value);
             }}
             error={!!error}
